@@ -4,53 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minji's Portfolio</title>
+    <title>Minji Shon</title>
     <meta name="description" content="Portfolio for front-end engineer Minji" />
     <meta name="author" content="Minji" />
-    <!-- Favicon -->
+    <!------------------------------ Favicon ------------------------------>
     <link rel="icon" href="images/favicon.ico" />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/8b6ff2590f.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!------------------------------ UNICONS ------------------------------>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!------------------------------ CSS ------------------------------>
     <link rel="stylesheet" href="style.css" />
+    <!------------------------------ MAIN JS ------------------------------>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="/images/logoTransparent.png" alt="logo image" />
-        <a href="#">Minji</a>
-      </div>
-      <div id="navbar__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Work</li>
-          <li class="navbar__menu__item">Testimonials</li>
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
-      </div>
-    </nav>
-    <!-- About -->
-    <section id="about"></section>
-    <!-- Skills -->
-    <section id="skills"></section>
-    <!-- Work -->
-    <section id="work"></section>
-    <!-- Testimonials -->
-    <section id="testimonials"></section>
-    <!-- Contact -->
-    <section id="contact"></section>
+    <!------------------------------ HEADER ------------------------------>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img
+          src="/images/logoTransparent.png"
+          alt="page logo"
+          class="nav__logo"
+        />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------------------------ MAIN ------------------------------>
+    <main class="main">
+      <!-------------------- HOME -------------------->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/minji-shon/"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="" class="home__social-icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- ABOUT ME -------------------->
+      <!-------------------- PORTFOLIO -------------------->
+      <!-------------------- CONTACT ME -------------------->
+    </main>
   </body>
 </html>
