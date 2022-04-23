@@ -8,12 +8,17 @@
     <meta name="description" content="Portfolio for front-end engineer Minji" />
     <meta name="author" content="Minji" />
     <!------------------------------ Favicon ------------------------------>
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="assets/favicon.ico" />
     <!------------------------------ UNICONS ------------------------------>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!------------------------------ TYPEIT LIBRARY ------------------------------>
+    <script
+      src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"
+      defer
+    ></script>
     <!------------------------------ CSS ------------------------------>
     <link rel="stylesheet" href="style.css" />
     <!------------------------------ MAIN JS ------------------------------>
@@ -24,7 +29,7 @@
     <header class="header" id="header">
       <nav class="nav container">
         <img
-          src="/images/logoTransparent.png"
+          src="/assets/logoTransparent.png"
           alt="page logo"
           class="nav__logo"
         />
@@ -85,11 +90,13 @@
               </a>
             </div>
             <div class="home__img">
-              <img src="/images/main_image.svg" alt="main image" />
+              <img src="/assets/main_image.svg" alt="main image" />
             </div>
             <div class="home__data">
               <h1 class="home__title">Hi there, I'm Minji</h1>
-              <h3 class="home__subtitle">Frontend Developer</h3>
+              <h3 class="home__subtitle" id="home-subtitle">
+                Frontend Developer
+              </h3>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
               </a>
@@ -105,8 +112,288 @@
         </div>
       </section>
       <!-------------------- ABOUT ME -------------------->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle skills__subtitle">My introduction</span>
+        <div class="about__container container grid">
+          <div class="about__data">
+            <p class="about__description">
+              An Applied Economics Master’s student graduate with a strong
+              interest in using emerging technologies in data analysis, such as
+              Big Data, Cloud Services, and Python. My technical aptitude and
+              problem-solving skills paired with my education have armed me with
+              the data knowledge to deliver cost-effective solutions and
+              forward-looking data insights
+            </p>
+          </div>
+          <div class="about__buttons">
+            <a
+              download=""
+              href="assets/Minji_Shon_Resume.pdf"
+              class="button button--flex"
+            >
+              Download Resume<i class="uil uil-download-alt button__icon"></i
+            ></a>
+          </div>
+        </div>
+        <span class="section__subtitle skills__subtitle">Skills</span>
+        <div class="skills__container container grid">
+          <div>
+            <!---------- SKILLS 1 ---------->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+                <div>
+                  <h1 class="skills_title">Frontend Developer</h1>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">HTML</div>
+
+                    <img
+                      src="assets/frontend_icon/html_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">CSS</div>
+
+                    <img
+                      src="assets/frontend_icon/css_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">JavaScript</div>
+
+                    <img
+                      src="assets/frontend_icon/javascript_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">React</div>
+
+                    <img
+                      src="assets/frontend_icon/react_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">Firebase</div>
+                    <img
+                      src="assets/frontend_icon/firebase_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">Cloudinary</div>
+
+                    <img
+                      src="assets/frontend_icon/cloudinary_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">Figma</div>
+
+                    <img
+                      src="assets/frontend_icon/figma_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---------- SKILLS 2 ---------->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-chart-line skills__icon"></i>
+                <div>
+                  <h1 class="skills_title">Data Analyst</h1>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">PostgreSQL</div>
+
+                    <img
+                      src="assets/analyst_icon/postgresql_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">Python</div>
+
+                    <img
+                      src="assets/analyst_icon/python_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name">Excel</div>
+
+                    <img
+                      src="assets/analyst_icon/excel_icon.svg"
+                      alt="css_icon"
+                      class="skills__img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-------------------- PORTFOLIO -------------------->
+      <section class="work section" id="work">
+        <h2 class="section__title">My Portfolio</h2>
+        <span class="section__subtitle work__subtitle">Recent Works</span>
+
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".frontend">Frontend</span>
+          <span class="work__item" data-filter=".analysis">Analysis</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix frontend">
+            <img
+              src="/assets/work/business_card_maker.png"
+              alt="business card maker preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Business Card Maker</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__card mix frontend">
+            <img
+              src="/assets/work/portfolio_website.png"
+              alt="portfolio website preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Portfolio Website</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__card mix frontend">
+            <img
+              src="/assets/work/youtube_clone.png"
+              alt="youtube mini clone preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Youtube Mini Clone</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__card mix analysis">
+            <img
+              src="/assets/work/fb_ad_analysis.png"
+              alt="facebook ad campaign analysis preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Facebook Ad Campaign Analysis</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__card mix analysis">
+            <img
+              src="/assets/work/stock_analysis.png"
+              alt="stock analysis preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Stock Analysis</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__card mix analysis">
+            <img
+              src="/assets/work/twitch_analysis.png"
+              alt="twitch analysis preview"
+              class="work__img"
+            />
+            <h3 class="work__title">Twitch Analysis</h3>
+            <div class="work__click">
+              <a href="#" class="work__button">
+                Demo <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+              <a href="#" class="work__button">
+                GitHub <i class="uil uil-arrow-right work__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-------------------- CONTACT ME -------------------->
     </main>
+    <!------------------------------ MIXITUP JS ------------------------------>
+    <script src="mixitup.min.js"></script>
   </body>
 </html>
