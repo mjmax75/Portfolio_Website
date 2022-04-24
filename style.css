@@ -18,6 +18,8 @@
   --input-color: hsl(var(--hue-color), 80%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== FONT AND TYPOGRAPHY  ==========*/
   --body-font: "Space Grotesk", sans-serif;
@@ -52,6 +54,18 @@
   --z-modal: 1000;
 }
 
+/*========== VARIABLES DARK THEME  ==========*/
+body.dark-theme {
+  --primary-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
 /*========== FONT SIZE FOR LARGE DEVICE  ==========*/
 @media screen and (min-width: 968px) {
   :root {
@@ -63,6 +77,23 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+}
+
+/*========== BUTTON DARK/LIGHT  ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--primary-color);
 }
 
 /*==================== BASE ====================*/
@@ -228,6 +259,16 @@ img {
 /* SHOW MENU */
 .show-menu {
   bottom: 0;
+}
+
+/* ACTIVE LINK */
+.active-link {
+  color: var(--primary-color);
+}
+
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*==================== HOME ====================*/
@@ -429,7 +470,7 @@ img {
 }
 
 .work__card {
-  background-color: var(--primary-color-lighter);
+  background-color: var(--primary-color-second);
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -456,10 +497,7 @@ img {
 
 .work__button {
   width: max-content;
-  background-color: var(--primary-color);
-  padding: 0.5rem;
   color: #fff;
-  border-radius: 0.5rem;
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
@@ -481,7 +519,7 @@ img {
   color: var(--body-color);
 }
 
-/*==================== WORK ====================*/
+/*==================== CONTACT ====================*/
 .contact__container {
   row-gap: 3rem;
 }
@@ -576,4 +614,47 @@ img {
 .footer__link,
 .footer__social {
   color: #fff;
+}
+
+/*==================== SCROLL UP ====================*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background-color: var(--primary-color-darker);
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* SHOW SCROLL */
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*==================== SCROLL BAR ====================*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-lighter);
 }
