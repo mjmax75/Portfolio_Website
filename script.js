@@ -27,8 +27,8 @@ function linkAction() {
 
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
-//========== TYPEIT LIBRARY FOR THE SUBTITLE ==========
-const typeItSubtitle = document.addEventListener(
+//========== TYPEIT LIBRARY FOR THE HOME SUBTITLE ==========
+const typeItSubtitleHome = document.addEventListener(
   "DOMContentLoaded",
   function () {
     new TypeIt("#home-subtitle", {
@@ -81,3 +81,19 @@ function activeWork() {
 }
 
 linkWork.forEach((list) => list.addEventListener("click", activeWork));
+
+//========== TYPEIT LIBRARY FOR THE FOOTER SUBTITLE ==========
+const typeItSubtitleFooter = document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    new TypeIt("#footer-subtitle", {
+      loop: true,
+      speed: 120,
+    })
+      .pause(600)
+      .delete(18, { delay: 600 })
+      .type("Data Analyst")
+      .pause(600)
+      .go();
+  }
+);
