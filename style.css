@@ -350,10 +350,12 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  border: none;
 }
 
 .button:hover {
   background-color: var(--primary-color-darker);
+  cursor: pointer;
 }
 
 .button__icon {
