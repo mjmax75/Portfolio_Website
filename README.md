@@ -38,6 +38,8 @@ This portfolio website features the following:
 
 5. Downloadable resume
 6. Display projects using [MixItUp 3 JS library](https://www.kunkalabs.com/mixitup/)
+   <img width="90%" alt="project" src="/assets/readme/portfolio_project.gif">
+
 7. Contact me section that allows submitting a form using [FormSubmit](https://formsubmit.co/)
 
 ## 3. Acknowledgements
