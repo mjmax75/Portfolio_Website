@@ -41,6 +41,7 @@ This portfolio website features the following:
    <img width="90%" alt="project" src="/assets/readme/portfolio_project.gif">
 
 7. Contact me section that allows submitting a form using [FormSubmit](https://formsubmit.co/)
+   <img width="90%" alt="contact" src="/assets/readme/portfolio_contact.gif">
 
 ## 3. Acknowledgements
 
