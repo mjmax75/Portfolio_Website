@@ -19,9 +19,24 @@ Demo Link → http://minjishon.com/
 This portfolio website features the following:
 
 1. Responsive design to various screen sizes
+<div>
+<img width="45%" alt="portfolio_mac" src="/assets/readme/portfolio_mac.png"> 
+<img width="45%" alt="portfolio_ipad" src="/assets/readme/portfolio_ipad.png">
+</div>
+
+<div>
+<img width="45%" alt="portfolio_phone" src="/assets/readme/portfolio_phone.png"> 
+</div>
+
 2. Typing utility that types out the position title using [TypeIt JS library](https://www.typeitjs.com/)
+   <img width="90%" alt="typeit" src="/assets/readme/portfolio_typeit.gif">
+
 3. The light/dark mode
+   <img width="90%" alt="light dark" src="/assets/readme/portfolio_light_dark.gif">
+
 4. Scroll down & scroll top function
+   <img width="90%" alt="scroll" src="/assets/readme/portfolio_scroll.gif">
+
 5. Downloadable resume
 6. Display projects using [MixItUp 3 JS library](https://www.kunkalabs.com/mixitup/)
 7. Contact me section that allows submitting a form using [FormSubmit](https://formsubmit.co/)
