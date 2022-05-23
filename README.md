@@ -19,9 +19,13 @@ Demo Link → http://minjishon.com/
 This portfolio website features the following:
 
 1. Responsive design to various screen sizes
-   <img width="45%" alt="portfolio_mac" src="/assets/readme/portfolio_mac_new.png">
-   <img width="45%" alt="portfolio_ipad" src="/assets/readme/portfolio_ipad_new.png">
-   <img width="45%" alt="portfolio_phone" src="/assets/readme/portfolio_phone_new.png">
+<div>
+ <img width="45%" alt="portfolio_mac" src="/assets/readme/portfolio_mac_new.png">
+ <img width="45%" alt="portfolio_ipad" src="/assets/readme/portfolio_ipad_new.png">
+ </div>
+ <div>
+ <img width="45%" alt="portfolio_phone" src="/assets/readme/portfolio_phone_new.png">
+ </div>
 
 2. Typing utility that types out the position title using [TypeIt JS library](https://www.typeitjs.com/)
    <img width="90%" alt="typeit" src="/assets/readme/portfolio_typeit.gif">
