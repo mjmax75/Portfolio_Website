@@ -6,7 +6,7 @@ Demo Link → http://minjishon.com/
 
 1. [Tech Stack](#1-tech-stack)
 2. [About this Project](#2-about-this-project)
-3. [Acknowledgements](#5-acknowledgements)
+3. [Acknowledgements](#3-acknowledgements)
 
 ## 1. Tech Stack
 
