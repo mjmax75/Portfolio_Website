@@ -178,7 +178,7 @@ themeButton.addEventListener('click', () => {
 //==================== SCROLL REVEAL ANIMATION ====================
 const sr = ScrollReveal({
   distance: '80px',
-  duration: 2500,
+  duration: 3000,
 });
 sr.reveal(`.home__data`, { origin: 'top', delay: 10 });
 sr.reveal(`.home__social`, { origin: 'top', delay: 10 });
